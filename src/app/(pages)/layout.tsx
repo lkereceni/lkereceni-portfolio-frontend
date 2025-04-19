@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import "@/app/globals.css";
 import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 
 const firaCode = Fira_Code({
   variable: "--font-fira-code",
@@ -21,10 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${firaCode.variable} antialiased dark`} // * For multi-fonts add object.variable next to firaCode.variable
+        className={`${firaCode.variable} font-mono antialiased dark flex flex-col min-h-screen`} // * For multi-fonts add object.variable next to firaCode.variable
       >
         <Header />
-        {children}
+        <main className="grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );
