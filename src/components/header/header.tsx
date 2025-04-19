@@ -4,6 +4,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import SocialMediaSidebar from "../social-media-sidebar/social-media-sidebar";
 
 type HeaderItem = {
   href: string;
@@ -34,6 +35,7 @@ const Header = () => {
 
   return (
     <nav className="flex justify-end px-[176px] py-8">
+      <SocialMediaSidebar />
       {navItems.map((item, index) => {
         const isActive = pathname === item.href;
 

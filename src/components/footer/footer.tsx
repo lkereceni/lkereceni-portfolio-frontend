@@ -21,13 +21,14 @@ const Footer = () => {
         <div className="flex flex-col gap-4">
           <h2 className="text-xl">Media</h2>
           <div className="flex gap-4">
-            <Link href={"https://github.com/lkereceni"}>
+            <Link href={"https://github.com/lkereceni"} target="_blank">
               <SiGithub className="text-muted-foreground text-3xl" />
             </Link>
             <Link
               href={
                 "https://www.linkedin.com/in/lovro-kere%C4%8Deni-25a997200/"
               }
+              target="_blank"
             >
               <SiLinkedin className="text-muted-foreground text-3xl" />
             </Link>
