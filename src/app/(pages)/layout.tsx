@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${firaCode.variable} font-mono antialiased dark flex flex-col min-h-screen`} // * For multi-fonts add object.variable next to firaCode.variable
+        className={`${firaCode.variable} font-mono antialiased flex flex-col min-h-screen`}
       >
         <Header />
         <main className="grow">{children}</main>
